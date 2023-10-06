@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - Bullet
+  - GreenEnemy
+  - BlueEnemy
   layers:
   - Default
   - TransparentFX

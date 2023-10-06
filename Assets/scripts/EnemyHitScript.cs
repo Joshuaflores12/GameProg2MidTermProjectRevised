@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class EnemyHitScript : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
         // Check if the collision is with an object tagged as "Bullet"
-        if (collision.gameObject.CompareTag("Bullet"))
+        if (other.CompareTag("Bullet"))
         {
             Debug.Log("Enemy collided with Bullet.");
             // Destroy the enemy GameObject
+            Destroy(other.gameObject);
             Destroy(gameObject);
         }
     }
