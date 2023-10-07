@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -6866762369721200672}
   m_Layer: 6
   m_Name: bullet 2
-  m_TagString: Bullet
+  m_TagString: RedBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

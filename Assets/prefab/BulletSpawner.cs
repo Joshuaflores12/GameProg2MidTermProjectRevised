@@ -120,9 +120,9 @@ public class TurretScript : MonoBehaviour
 
 
     public Transform partToRotate;
-    public float turnSpeed = 10f;
+    public float turnSpeed = 5f;
 
-    public float fireRate = 1f;
+    public float fireRate = 0.5f;
 
     public GameObject redbulletPrefab;
     public GameObject greenbulletPrefab;
@@ -179,7 +179,7 @@ public class TurretScript : MonoBehaviour
         if (fireCountdown <= 0f)
         {
             Shoot();
-            fireCountdown = 1f / fireRate;
+            fireCountdown = 0.5f / fireRate;
         }
 
         fireCountdown -= Time.deltaTime;
